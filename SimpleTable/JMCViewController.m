@@ -7,6 +7,7 @@
 //
 
 #import "JMCViewController.h"
+#import "JMCSimpleTableCell.h"
 
 @interface JMCViewController ()
 
@@ -50,14 +51,29 @@
 {
     static NSString *simpleTableIdentifier = @"SimpleTableCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    JMCSimpleTableCell *cell = (JMCSimpleTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell ==nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SimpleTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
-    cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+//    
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+//    }
+//
+    
+    cell.nameLabel.text = [recipes objectAtIndex:indexPath.row];
+    cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+ //   cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
+    
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 78;
 }
 @end

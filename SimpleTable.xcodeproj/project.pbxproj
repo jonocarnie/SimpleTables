@@ -37,6 +37,8 @@
 		FBEA40EB18EFE56900D6DDF7 /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBEA40DB18EFE56900D6DDF7 /* thai_shrimp_cake.jpg */; };
 		FBEA40EC18EFE56900D6DDF7 /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBEA40DC18EFE56900D6DDF7 /* vegetable_curry.jpg */; };
 		FBEA40ED18EFE56900D6DDF7 /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBEA40DD18EFE56900D6DDF7 /* white_chocolate_donut.jpg */; };
+		FBEA40EF18EFE77000D6DDF7 /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBEA40EE18EFE77000D6DDF7 /* SimpleTableCell.xib */; };
+		FBEA40F218EFEADB00D6DDF7 /* JMCSimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA40F118EFEADB00D6DDF7 /* JMCSimpleTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,9 @@
 		FBEA40DB18EFE56900D6DDF7 /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
 		FBEA40DC18EFE56900D6DDF7 /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
 		FBEA40DD18EFE56900D6DDF7 /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		FBEA40EE18EFE77000D6DDF7 /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
+		FBEA40F018EFEADB00D6DDF7 /* JMCSimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMCSimpleTableCell.h; sourceTree = "<group>"; };
+		FBEA40F118EFEADB00D6DDF7 /* JMCSimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMCSimpleTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,7 @@
 		FBEA408C18EFD16900D6DDF7 = {
 			isa = PBXGroup;
 			children = (
+				FBEA40F318EFEAF000D6DDF7 /* TableCell */,
 				FBEA40CD18EFE56900D6DDF7 /* simpletable_image_pack */,
 				FBEA409E18EFD16900D6DDF7 /* SimpleTable */,
 				FBEA40BD18EFD16900D6DDF7 /* SimpleTableTests */,
@@ -208,6 +214,16 @@
 			path = simpletable_image_pack;
 			sourceTree = "<group>";
 		};
+		FBEA40F318EFEAF000D6DDF7 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA40F018EFEADB00D6DDF7 /* JMCSimpleTableCell.h */,
+				FBEA40F118EFEADB00D6DDF7 /* JMCSimpleTableCell.m */,
+				FBEA40EE18EFE77000D6DDF7 /* SimpleTableCell.xib */,
+			);
+			name = TableCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,6 +310,7 @@
 				FBEA40EC18EFE56900D6DDF7 /* vegetable_curry.jpg in Resources */,
 				FBEA40EB18EFE56900D6DDF7 /* thai_shrimp_cake.jpg in Resources */,
 				FBEA40A318EFD16900D6DDF7 /* InfoPlist.strings in Resources */,
+				FBEA40EF18EFE77000D6DDF7 /* SimpleTableCell.xib in Resources */,
 				FBEA40ED18EFE56900D6DDF7 /* white_chocolate_donut.jpg in Resources */,
 				FBEA40E618EFE56900D6DDF7 /* instant_noodle_with_egg.jpg in Resources */,
 				FBEA40E518EFE56900D6DDF7 /* hamburger.jpg in Resources */,
@@ -328,6 +345,7 @@
 				FBEA40A518EFD16900D6DDF7 /* main.m in Sources */,
 				FBEA40A918EFD16900D6DDF7 /* JMCAppDelegate.m in Sources */,
 				FBEA40AF18EFD16900D6DDF7 /* JMCViewController.m in Sources */,
+				FBEA40F218EFEADB00D6DDF7 /* JMCSimpleTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
