@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JMCViewController : UIViewController
+@interface JMCViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
